@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>YuuSong</title>
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/estilos.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="javascripts/app.js"></script>
+  </head>
+  <body class="home">
+    <header data-role="header" class="header">
+      <div class="cont--header">
+        <figure class="logo">
+          <h1 class="title">YuuSong</h1>
+        </figure>
+        <form method="get" class="formH">
+          <fieldset class="content--Fieldset">
+            <input type="search" placeholder="busca su siguiente musica" name="buscador" class="searchWeb">
+          </fieldset>
+        </form>
+        <ul class="user">
+          <li class="user--List jsOn"><i class="el el-torso"></i>Conectate</li>
+          <li class="user--List"><i class="el el-cloud-alt"></i>Subir</li>
+          <li class="user--List jsTwoo"><i class="el el-unlock-alt"></i>Registro</li>
+          <li class="user--List"><i class="el el-bell"></i>Novedades</li>
+          <form class="user--Login">
+            <fieldset class="user--Login--Cont">
+              <fieldset class="user--Login--Fieldset">
+                <label class="user--Login--TT">Ingrese su usuario</label>
+                <input data-user="name" type="text" name="nameLogin" placeholder="yuusong">
+              </fieldset>
+              <fieldset class="user--Login--Fieldset">
+                <label class="user--Login--TT">Ingrese su clave</label>
+                <input data-user="pass" type="password" name="passwordLogin" placeholder="********">
+              </fieldset>
+              <fieldset class="user--Login--Fieldset">
+                <input type="submit" value="Iniciar Session">
+              </fieldset>
+              <fieldset class="user--Login--Fieldset jsError"></fieldset>
+              <fieldset class="user--Login--Fieldset"><a href="#" target="_blank" class="reseteoPassword">Recuperar Contraseña</a></fieldset>
+            </fieldset>
+          </form>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="content">
+        <form name="search" action="listen/" method="get" class="form">
+          <fieldset class="content--Fieldset">
+            <input name="buscador" type="search" placeholder="Busca generos, artistas">
+          </fieldset>
+          <fieldset class="content--Fieldset--Ico"><i class="el el-search-alt"></i></fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

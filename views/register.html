@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>YuuSong</title>
+    <link rel="stylesheet" href="../stylesheets/normalize.css">
+    <link rel="stylesheet" href="../stylesheets/estilos.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="../javascripts/app.js"></script>
+    <script src="../javascripts/web.js"></script>
+  </head>
+  <body class="bgRegister">
+    <header data-role="header" class="header">
+      <div class="cont--header">
+        <figure class="logo">
+          <h1 class="title">YuuSong</h1>
+        </figure>
+        <form method="get" action="listen/" class="formH">
+          <fieldset class="content--Fieldset">
+            <input type="search" placeholder="busca su siguiente musica" name="buscador" class="searchWeb">
+          </fieldset>
+        </form>
+        <ul class="user">
+          <li class="user--List jsOn"><i class="el el-torso"></i>Conectate</li>
+          <li class="user--List jsTwoo"><i class="el el-unlock-alt"></i>Registro</li>
+          <form class="user--Login">
+            <fieldset class="user--Login--Fieldset">
+              <input type="text" name="nameLogin" placeholder="usuario">
+            </fieldset>
+            <fieldset class="user--Login--Fieldset">
+              <input type="password" name="passwordLogin" placeholder="password">
+            </fieldset>
+            <fieldset class="user--Login--Fieldset">
+              <input type="submit" value="Iniciar Session">
+            </fieldset>
+            <fieldset class="user--Login--Fieldset jsError"></fieldset>
+          </form>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="registerUser">
+        <form method="POST" class="userForm">
+          <fieldset class="contFieldset">
+            <label for="" class="tt">Nombre</label>
+            <input type="text" name="nombre" required="">
+          </fieldset>
+          <fieldset class="contFieldset">
+            <label for="" class="tt">Apellidos</label>
+            <input type="text" name="surname" required="">
+          </fieldset>
+          <fieldset class="contFieldset">
+            <label for="" class="tt">Nickname</label>
+            <input type="text" name="nick" required="">
+          </fieldset>
+          <fieldset class="contFieldset">
+            <label for="" class="tt">Email</label>
+            <input type="email" name="email" required="">
+          </fieldset>
+          <fieldset class="contFieldset">
+            <label for="" class="tt">Password</label>
+            <input type="password" name="password" required="">
+          </fieldset>
+          <fieldset class="contFieldset">
+            <input type="submit" value="Registrar" class="sendRegister">
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

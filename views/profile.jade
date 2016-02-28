@@ -1,0 +1,41 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    title #{name} #{title}
+    link(rel='stylesheet', href='../stylesheets/normalize.css')
+    link(rel='stylesheet', href='../stylesheets/estilos.css')
+    script(src='http://code.jquery.com/jquery-2.1.4.min.js')
+    script(src='../javascripts/app.js')
+    script(src='../javascripts/web.js')
+  body
+
+    header.header(data-role='header')
+      .cont--header
+        figure.logo
+          h1.title YuuSong
+        form.formH(method='get')
+          fieldset.content--Fieldset
+            input.searchWeb(type='search', placeholder='busca su siguiente musica', name='buscador')
+        ul.user
+          li.user--List.jsOn
+            | Mi Cuenta
+          li.user--List.jsTwoo
+            | Registro
+          form.user--Login
+            fieldset.user--Login--Fieldset
+              input(type='text', name='name', placeholder='usuario')
+            fieldset.user--Login--Fieldset
+              input(type='password', placeholder='password')
+    main  
+      section(class="profile")
+        header(class="profile--Cont")
+          h2(class="title") Mi Profile "Edinson"
+        label(class="list--Cont--Title") Musicas escuchadas
+        ul(class="list--Cont")
+          li(class="listas--song")
+            <i class="el el-play-alt"></i> 
+            |Rock 
+          li(class="listas--song")
+            <i class="el el-play-alt"></i> 
+            |Rock 

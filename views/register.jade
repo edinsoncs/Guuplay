@@ -1,0 +1,60 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    title YuuSong
+    link(rel='stylesheet', href='../stylesheets/normalize.css')
+    link(rel='stylesheet', href='../stylesheets/estilos.css')
+    script(src='http://code.jquery.com/jquery-2.1.4.min.js')
+    script(src='../javascripts/app.js')
+    script(src='../javascripts/web.js')
+  body.bgRegister
+    header.header(data-role='header')
+      .cont--header
+        figure.logo
+          h1.title YuuSong
+        form.formH(method='get', action='listen/')
+          fieldset.content--Fieldset
+            input.searchWeb(type='search', placeholder='busca su siguiente musica', name='buscador')
+        ul.user
+         li.user--List.jsOn
+            i(class="el el-torso")
+            | Conectate
+          li.user--List.jsTwoo
+            i(class="el el-unlock-alt")
+            | Registro
+          form.user--Login
+            fieldset.user--Login--Fieldset
+              input(type='text', name='nameLogin', placeholder='usuario')
+            fieldset.user--Login--Fieldset
+              input(type='password', name="passwordLogin", placeholder='password')
+            fieldset.user--Login--Fieldset
+              input(type="submit" value="Iniciar Session")
+            fieldset.user--Login--Fieldset.jsError
+    main
+      section.registerUser
+        form(class="userForm", method="POST")
+          fieldset.contFieldset
+            label.tt(for='')
+              | Nombre
+            input(type='text', name='nombre', required='')
+          fieldset.contFieldset
+            label.tt(for='')
+              | Apellidos
+            input(type='text', name='surname', required='')
+          fieldset.contFieldset
+            label.tt(for='')
+              | Nickname
+            input(type='text', name='nick', required='')
+          fieldset.contFieldset
+            label.tt(for='')
+              | Email
+            input(type='email', name='email', required='')
+          fieldset.contFieldset
+            label.tt(for='')
+              | Password
+            input(type='password', name='password', required='')
+          fieldset.contFieldset
+            input.sendRegister(type='submit', value='Registrar')
+
+      

@@ -1,0 +1,52 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    title YuuSong
+    link(rel='stylesheet', href='stylesheets/normalize.css')
+    link(rel='stylesheet', href='stylesheets/estilos.css')
+    script(src='http://code.jquery.com/jquery-2.1.4.min.js')
+    script(src='../javascripts/app.js')
+    script(src='../javascripts/web.js')
+  body.home
+    
+    header.header(data-role='header')
+      .cont--header
+        figure.logo
+          h1.title YuuSong
+        ul.user
+          li.user--List.jsOn
+            i(class="el el-torso")
+            | Conectate
+          li.user--List
+            i(class="el el-cloud-alt")
+            | Subir
+          li.user--List.jsTwoo
+            i(class="el el-unlock-alt")
+            | Registro
+          li.user--List
+            i(class="el el-bell")
+            | Novedades
+          form.user--Login
+            fieldset.user--Login--Cont
+              fieldset.user--Login--Fieldset
+                label.user--Login--TT Ingrese su usuario
+                input(data-user="name", type='text', name='nameLogin', placeholder='yuusong')
+              fieldset.user--Login--Fieldset
+                label.user--Login--TT Ingrese su clave
+                input(data-user="pass", type='password', name="passwordLogin", placeholder='********')
+              fieldset.user--Login--Fieldset
+                input(type="submit" value="Iniciar Session")
+              fieldset.user--Login--Fieldset.jsError
+              fieldset.user--Login--Fieldset
+                a(class="reseteoPassword", href="#", target="_blank",) Recuperar Contraseña
+
+
+    main
+      section.content
+        form.form(name='search', action='listen/', method='get')
+          fieldset.content--Fieldset
+            input(name='buscador', type='search', placeholder='Busca generos, artistas')
+          fieldset.content--Fieldset--Ico
+            i.el.el-search-alt
+      

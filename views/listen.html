@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>YuuSong</title>
+    <link rel="stylesheet" href="../stylesheets/normalize.css">
+    <link rel="stylesheet" href="../stylesheets/estilos.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="../javascripts/app.js"></script>
+    <script src="../javascripts/web.js"></script>
+  </head>
+  <body class="bgArtist">
+    <header data-role="header" class="header">
+      <div class="cont--header">
+        <figure class="logo">
+          <h1 class="title">YuuSong</h1>
+        </figure>
+        <form method="get" class="formH">
+          <fieldset class="content--Fieldset">
+            <input type="search" placeholder="busca su siguiente musica" name="buscador" class="searchWeb">
+          </fieldset>
+        </form>
+        <ul class="user">
+          <li class="user--List jsOn"><i class="el el-torso"></i>Conectate</li>
+          <li class="user--List"><i class="el el-cloud-alt"></i>Subir</li>
+          <li class="user--List jsTwoo"><i class="el el-unlock-alt"></i>Registro</li>
+          <li class="user--List"><i class="el el-bell"></i>Novedades</li>
+          <form class="user--Login">
+            <fieldset class="user--Login--Cont">
+              <fieldset class="user--Login--Fieldset">
+                <label class="user--Login--TT">Ingrese su usuario</label>
+                <input data-user="name" type="text" name="nameLogin" placeholder="yuusong">
+              </fieldset>
+              <fieldset class="user--Login--Fieldset">
+                <label class="user--Login--TT">Ingrese su clave</label>
+                <input data-user="pass" type="password" name="passwordLogin" placeholder="********">
+              </fieldset>
+              <fieldset class="user--Login--Fieldset">
+                <input type="submit" value="Iniciar Session">
+              </fieldset>
+              <fieldset class="user--Login--Fieldset jsError"></fieldset>
+              <fieldset class="user--Login--Fieldset"><a href="#" target="_blank" class="reseteoPassword">Recuperar Contraseña</a></fieldset>
+            </fieldset>
+          </form>
+        </ul>
+      </div>
+    </header>
+    <section class="slide">
+      <ul class="slide--Ul">
+        <li class="List">
+          <div class="cont--Img"></div>
+        </li>
+      </ul>
+      <div class="artistas--Details">
+        <div class="detalles"></div>
+      </div>
+    </section>
+    <main>
+      <section class="cont">
+        <header class="cont--Header"></header>
+        <section class="cont--Main">
+          <section class="cont--Playlist"></section>
+          <aside class="cont--Aside">
+            <article class="cont--Aside--Article">
+              <header class="Article--Header">
+                <ul class="ul--Cont">
+                  <li class="list"><a href="#" class="LinkSocial twBtn"><i class="el el-twitter"></i></a></li>
+                  <li class="list"><a href="#" class="LinkSocial fbBtn"><i class="el el-facebook"></i></a></li>
+                </ul>
+                <fieldset class="fieldset--Shared">
+                  <input type="text" class="inputSharedLink">
+                </fieldset>
+              </header>
+            </article>
+          </aside>
+        </section>
+      </section>
+    </main>
+    <section class="contReproductor">
+      <div class="repro">
+        <div class="reproCenter">
+          <div class="reproCenter--Cont">
+            <div class="reproCenter--Prev"><i class="el el-backward previusIcon"></i></div>
+            <div class="reproCenter--Play"><i class="el el-play playIcon"></i></div>
+            <div class="reproCenter--Next"><i class="el el-forward nextIcon"></i></div>
+          </div>
+          <div class="reproCenter--Options">
+            <figure class="reproIz--Cover u--Margen"><img src="https://i1.sndcdn.com/artworks-000032246604-kc2f05-large.jpg" alt="" class="playCover"></figure>
+            <section class="reproIz--Playing">
+              <header class="Playing--Titles">
+                <h4 class="title">Time to pretend by MGMT</h4>
+              </header>
+              <div class="Playing--Options">
+                <div class="Options--TimeGoMusic"><span class="titles">00:18</span></div>
+                <div class="Options--ProgressMusic"></div>
+                <div class="Options--TimeFinishMusic"><span class="titles">05:28</span></div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script></script>
+  </body>
+</html>
