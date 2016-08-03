@@ -95,9 +95,9 @@
 							"<figure class='u--Margen contImg'>"+
 								"<img class='contImg--Img' src="+data[i].artwork_url+">"+
 							"</figure>"+
-							"<span class='List--Ico'>"+
+							"<!--<span class='List--Ico'>"+
 								"<i class='el el-play-alt'></i>"+
-							"</span>" + 
+							"</span>-->" + 
 							"<span class='List--Title'>" + 
 								data[i].title.replace("-", "</br>") + 
 						"</li>"+
